@@ -110,7 +110,7 @@ ul {
 .header__phone::before {
   content: '';
   position: absolute;
-  background-image: url('images/tel-header.svg');
+  background-image: url(../images/tel-header.svg);
   height: 30px;
   width: 30px;
   left: 0;
@@ -272,7 +272,7 @@ ul {
   margin-bottom: 20px;
 }
 .price {
-  background-image: url('images/price-bg.png');
+  background-image: url(../images/price-bg.png);
   background-repeat: no-repeat;
   background-position: center right 20%;
 }
@@ -349,7 +349,7 @@ ul {
 }
 
 .footer {
-  background-image: url('images/footer-bg.jpg');
+  background-image: url(../images/footer-bg.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -368,7 +368,7 @@ ul {
 .footer__contacts {
   width: 356px;
   height: 527px;
-  background-image: url('images/footer-airsphere.png');
+  background-image: url(../images/footer-airsphere.png);
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
@@ -400,10 +400,10 @@ ul {
   top: -5px;
 }
 .footer__phone::before {
-  background-image: url('images/footer-phone.svg');
+  background-image: url(../images/footer-phone.svg);
 }
 .footer__email::before {
-  background-image: url('images/footer-mail.svg');
+  background-image: url(../images/footer-mail.svg);
 }
 .footer__email {
   margin-bottom: 20px;
