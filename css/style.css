@@ -245,7 +245,7 @@ ul {
   padding-right: 100px;
   width: 50%;
   object-fit: cover;
-  height: 100vh;
+  height: 100%;
 }
 .hotel__container {
   max-width: 1230px;
