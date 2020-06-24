@@ -244,7 +244,8 @@ ul {
 .hotel__image {
   padding-right: 100px;
   width: 50%;
-  height: 90vh;
+  object-fit: cover;
+  height: 100vh;
 }
 .hotel__container {
   max-width: 1230px;
