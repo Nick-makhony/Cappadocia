@@ -37,6 +37,9 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #000;
   font-family: 'RobotoCondensed-Light';
@@ -236,16 +239,36 @@ ul {
   margin-left: 140px;
 }
 .hotel__inner {
-  display: flex;
+  position: relative;
 }
 .hotel__image {
-  margin-right: 100px;
+  padding-right: 100px;
+  width: 50%;
+  height: 90vh;
+}
+.hotel__container {
+  max-width: 1230px;
+  padding-right: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.hotel__content {
+  width: 600px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .hotel__text {
   margin-bottom: 20px;
 }
 .hotel__gallery {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -428,11 +451,20 @@ ul {
   .fairy-tail__body {
     padding-left: 15px;
   }
-
+  .hotel__content {
+    width: 50%;
+  }
+  .hotel__gallery img {
+    width: 80%;
+  }
+  /* .hotel__gallery {
+    justify-content: center;
+  }*/
+  .hotel__gallery a {
+    width: 45%;
+    margin-top: 15px;
+  }
   @media (max-width: 1186px) {
-    .hotel__gallery {
-      justify-content: center;
-    }
     .contacts__images {
       width: 50%;
     }
@@ -449,7 +481,8 @@ ul {
       padding: 0 15px;
     }
     .fairy-tail__container,
-    .our-trip__container {
+    .our-trip__container,
+    .hotel__container {
       position: static;
     }
     .fairy-tail__slider {
@@ -499,21 +532,16 @@ ul {
     .hotel__title span {
       margin-left: 100px;
     }
-    .hotel__inner {
-      position: static;
-    }
     .hotel__content {
       width: 100%;
+      padding: 15px;
     }
     .hotel__image {
       height: 50vh;
       width: 100%;
       object-fit: cover;
       margin-right: 0;
-    }
-
-    .hotel__inner {
-      display: block;
+      padding: 0;
     }
     .hotel__gallery {
       justify-content: space-between;
